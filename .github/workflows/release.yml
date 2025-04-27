@@ -25,7 +25,7 @@ concurrency:
 
 env:
   CARGO_TERM_COLOR: always
-  WORKSPACE_ROOT_MANIFEST_DIR: "/home/runner/work/std/std"
+  WORKSPACE_ROOT_MANIFEST_DIR: "/home/runner/work/net/net"
 
 jobs:
   create-or-update-nightly-tag:
@@ -222,27 +222,10 @@ jobs:
         uses: taiki-e/upload-rust-binary-action@v1
         with:
           bin: |
-            libreactive_graph_std_arithmetic,
-            libreactive_graph_std_array,
-            libreactive_graph_std_base,
-            libreactive_graph_std_color,
-            libreactive_graph_std_comparison,
-            libreactive_graph_std_connector,
-            libreactive_graph_std_date_time,
-            libreactive_graph_std_flow,
-            libreactive_graph_std_logical,
-            libreactive_graph_std_metadata,
-            libreactive_graph_std_numeric,
-            libreactive_graph_std_object,
-            libreactive_graph_std_random,
-            libreactive_graph_std_result,
-            libreactive_graph_std_state,
-            libreactive_graph_std_string,
-            libreactive_graph_std_taxonomy,
-            libreactive_graph_std_trigger,
-            libreactive_graph_std_value
+            libreactive_graph_net_git,
+            libreactive_graph_net_http
           target: ${{ matrix.target }}
-          archive: 'reactive-graph-std-$tag-$target'
+          archive: 'reactive-graph-net-$tag-$target'
           include: LICENSE.md,README.md,CHANGELOG.md,CODE_OF_CONDUCT.md,CONTRIBUTING.md,SECURITY.md
           tar: unix
           zip: windows
@@ -253,28 +236,11 @@ jobs:
         uses: taiki-e/upload-rust-binary-action@v1
         with:
           bin: |
-            libreactive_graph_std_arithmetic,
-            libreactive_graph_std_array,
-            libreactive_graph_std_base,
-            libreactive_graph_std_color,
-            libreactive_graph_std_comparison,
-            libreactive_graph_std_connector,
-            libreactive_graph_std_date_time,
-            libreactive_graph_std_flow,
-            libreactive_graph_std_logical,
-            libreactive_graph_std_metadata,
-            libreactive_graph_std_numeric,
-            libreactive_graph_std_object,
-            libreactive_graph_std_random,
-            libreactive_graph_std_result,
-            libreactive_graph_std_state,
-            libreactive_graph_std_string,
-            libreactive_graph_std_taxonomy,
-            libreactive_graph_std_trigger,
-            libreactive_graph_std_value
+            libreactive_graph_net_git,
+            libreactive_graph_net_http
           target: ${{ matrix.target }}
           build-tool: ${{ matrix.build_tool }}
-          archive: 'reactive-graph-std-nightly-$target'
+          archive: 'reactive-graph-net-nightly-$target'
           include: LICENSE.md,README.md,CHANGELOG.md,CODE_OF_CONDUCT.md,CONTRIBUTING.md,SECURITY.md
           tar: unix
           zip: windows
@@ -333,52 +299,16 @@ jobs:
       - name: Create Debian Package
         run: |
           # It's important to change into the plugin directory and building each package
-          cd ./plugins/arithmetic/crates/plugin
-          cargo deb -p reactive-graph-std-arithmetic --target=${{ matrix.target }} --deb-version ${{steps.tag.outputs.tag}}
-          cd ../../../base/crates/plugin
-          cargo deb -p reactive-graph-std-base --target=${{ matrix.target }} --deb-version ${{steps.tag.outputs.tag}}
-          cd ../../../color/crates/plugin
-          cargo deb -p reactive-graph-std-color --target=${{ matrix.target }} --deb-version ${{steps.tag.outputs.tag}}
-          cd ../../../comparison/crates/plugin
-          cargo deb -p reactive-graph-std-comparison --target=${{ matrix.target }} --deb-version ${{steps.tag.outputs.tag}}
-          cd ../../../connector/crates/plugin
-          cargo deb -p reactive-graph-std-connector --target=${{ matrix.target }} --deb-version ${{steps.tag.outputs.tag}}
-          cd ../../../date-time/crates/plugin
-          cargo deb -p reactive-graph-std-date-time --target=${{ matrix.target }} --deb-version ${{steps.tag.outputs.tag}}
-          cd ../../../flow/crates/plugin
-          cargo deb -p reactive-graph-std-flow --target=${{ matrix.target }} --deb-version ${{steps.tag.outputs.tag}}
           cd ../../../git/crates/plugin
           cargo deb -p reactive-graph-net-git --target=${{ matrix.target }} --deb-version ${{steps.tag.outputs.tag}}
           cd ../../../http/crates/plugin
           cargo deb -p reactive-graph-net-http --target=${{ matrix.target }} --deb-version ${{steps.tag.outputs.tag}}
-          # cd ../../../i18n/crates/plugin
-          # cargo deb -p reactive-graph-std-i18n --target=${{ matrix.target }} --deb-version ${{steps.tag.outputs.tag}}
-          cd ../../../logical/crates/plugin
-          cargo deb -p reactive-graph-std-logical --target=${{ matrix.target }} --deb-version ${{steps.tag.outputs.tag}}
-          cd ../../../metadata/crates/plugin
-          cargo deb -p reactive-graph-std-metadata --target=${{ matrix.target }} --deb-version ${{steps.tag.outputs.tag}}
-          cd ../../../numeric/crates/plugin
-          cargo deb -p reactive-graph-std-numeric --target=${{ matrix.target }} --deb-version ${{steps.tag.outputs.tag}}
-          cd ../../../random/crates/plugin
-          cargo deb -p reactive-graph-std-random --target=${{ matrix.target }} --deb-version ${{steps.tag.outputs.tag}}
-          cd ../../../result/crates/plugin
-          cargo deb -p reactive-graph-std-result --target=${{ matrix.target }} --deb-version ${{steps.tag.outputs.tag}}
-          cd ../../../state/crates/plugin
-          cargo deb -p reactive-graph-std-state --target=${{ matrix.target }} --deb-version ${{steps.tag.outputs.tag}}
-          cd ../../../string/crates/plugin
-          cargo deb -p reactive-graph-std-string --target=${{ matrix.target }} --deb-version ${{steps.tag.outputs.tag}}
-          cd ../../../taxonomy/crates/plugin
-          cargo deb -p reactive-graph-std-taxonomy --target=${{ matrix.target }} --deb-version ${{steps.tag.outputs.tag}}
-          cd ../../../trigger/crates/plugin
-          cargo deb -p reactive-graph-std-trigger --target=${{ matrix.target }} --deb-version ${{steps.tag.outputs.tag}}
-          cd ../../../value/crates/plugin
-          cargo deb -p reactive-graph-std-value --target=${{ matrix.target }} --deb-version ${{steps.tag.outputs.tag}}
         env:
           VERGEN_IDEMPOTENT: true
       - name: Upload debian package to release
         uses: svenstaro/upload-release-action@v2
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: target/${{ matrix.target }}/debian/libreactive-graph-std-*_*_*.deb
+          file: target/${{ matrix.target }}/debian/libreactive-graph-net-*_*_*.deb
           file_glob: true
           tag: ${{ github.ref }}

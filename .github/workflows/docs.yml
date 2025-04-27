@@ -47,5 +47,5 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./target/doc
           destination_dir: docs
-          cname: std.reactive-graph.io
+          cname: net.reactive-graph.io
           # keep_files: true

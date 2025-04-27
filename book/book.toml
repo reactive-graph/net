@@ -5,8 +5,8 @@ authors = [
 language = "en"
 multilingual = false
 src = "src"
-title = "Reactive Graph - Standard Library"
-description = "The standard library of Reactive Graph"
+title = "Reactive Graph - Network Library"
+description = "The network library of Reactive Graph"
 
 [preprocessor.mermaid]
 command = "mdbook-mermaid"
@@ -63,7 +63,7 @@ additional-css = [
 theme = "theme"
 default-theme = "theme"
 preferred-dark-theme = "theme"
-git-repository-url = "https://github.com/reactive-graph/std"
-edit-url-template = "https://github.com/reactive-graph/std/edit/main/{path}"
-site-url = "https://std.reactive-graph.io/"
-cname = "std.reactive-graph.io"
+git-repository-url = "https://github.com/reactive-graph/net"
+edit-url-template = "https://github.com/reactive-graph/net/edit/main/{path}"
+site-url = "https://net.reactive-graph.io/"
+cname = "net.reactive-graph.io"

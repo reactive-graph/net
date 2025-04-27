@@ -66,4 +66,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./book/book
           destination_dir: book
-          cname: std.reactive-graph.io
+          cname: net.reactive-graph.io
