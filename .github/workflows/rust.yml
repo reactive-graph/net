@@ -61,7 +61,10 @@ jobs:
     strategy:
       matrix:
         toolchain: [ stable, nightly-2025-03-14 ]
-        target: [ x86_64-unknown-linux-gnu, x86_64-unknown-linux-musl ]
+        target:
+          - x86_64-unknown-linux-gnu
+          # Musl is not yet compatible with openssl-sys and gitoxide doesn't support rustls yet
+          # - x86_64-unknown-linux-musl
     steps:
       - name: VCS Checkout
         uses: actions/checkout@v4
@@ -106,7 +109,10 @@ jobs:
     strategy:
       matrix:
         toolchain: [ stable, nightly-2025-03-14 ]
-        target: [ x86_64-unknown-linux-gnu, x86_64-unknown-linux-musl ]
+        target:
+          - x86_64-unknown-linux-gnu
+          # Musl is not yet compatible with openssl-sys and gitoxide doesn't support rustls yet
+          # - x86_64-unknown-linux-musl
     runs-on: ubuntu-22.04
     steps:
       - name: VCS Checkout
