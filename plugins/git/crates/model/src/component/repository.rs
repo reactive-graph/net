@@ -1,20 +1,20 @@
-use git2::build::CheckoutBuilder;
-use git2::build::RepoBuilder;
 use git2::AutotagOption;
 use git2::FetchOptions;
 use git2::RemoteCallbacks;
 use git2::Repository;
+use git2::build::CheckoutBuilder;
+use git2::build::RepoBuilder;
 
-use crate::TransferProgress;
 use crate::NAMESPACE_GIT;
+use crate::TransferProgress;
 use log::trace;
 use reactive_graph_behaviour_model_api::behaviour_ty;
 use reactive_graph_behaviour_model_api::component_behaviour_ty;
 use reactive_graph_graph::component_model;
 use reactive_graph_graph::component_ty;
 use reactive_graph_graph::properties;
-use reactive_graph_sys_file_model::FilePath;
 use reactive_graph_net_http_model::Url;
+use reactive_graph_sys_file_model::FilePath;
 
 properties!(
     RepositoryProperties,
