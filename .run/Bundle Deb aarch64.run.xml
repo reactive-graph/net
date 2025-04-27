@@ -1,7 +1,7 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="Bundle Deb aarch64" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
-    <option name="command" value="deb -p reactive-graph-std-arithmetic --target aarch64-unknown-linux-gnu"/>
-    <option name="workingDirectory" value="file://$PROJECT_DIR$/plugins/arithmetic/crates/plugin"/>
+    <option name="command" value="deb -p reactive-graph-net-http --target aarch64-unknown-linux-gnu"/>
+    <option name="workingDirectory" value="file://$PROJECT_DIR$/plugins/http/crates/plugin"/>
     <envs>
       <env name="RUSTC_WRAPPER" value="sccache"/>
     </envs>
