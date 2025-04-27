@@ -1,0 +1,9 @@
+(function() {
+    var implementors = Object.fromEntries([["reactive_graph_net_git_model",[["impl PropertyTypeDefinition for <a class=\"enum\" href=\"reactive_graph_net_git_model/component/repository/enum.RepositoryProperties.html\" title=\"enum reactive_graph_net_git_model::component::repository::RepositoryProperties\">RepositoryProperties</a>"],["impl PropertyTypeDefinition for <a class=\"enum\" href=\"reactive_graph_net_git_model/component/transfer_progress/enum.TransferProgressProperties.html\" title=\"enum reactive_graph_net_git_model::component::transfer_progress::TransferProgressProperties\">TransferProgressProperties</a>"]]],["reactive_graph_net_http_model",[["impl PropertyTypeDefinition for <a class=\"enum\" href=\"reactive_graph_net_http_model/component/json_rpc/enum.JsonRpcProperties.html\" title=\"enum reactive_graph_net_http_model::component::json_rpc::JsonRpcProperties\">JsonRpcProperties</a>"],["impl PropertyTypeDefinition for <a class=\"enum\" href=\"reactive_graph_net_http_model/component/request/enum.RequestProperties.html\" title=\"enum reactive_graph_net_http_model::component::request::RequestProperties\">RequestProperties</a>"],["impl PropertyTypeDefinition for <a class=\"enum\" href=\"reactive_graph_net_http_model/component/response/enum.ResponseProperties.html\" title=\"enum reactive_graph_net_http_model::component::response::ResponseProperties\">ResponseProperties</a>"],["impl PropertyTypeDefinition for <a class=\"enum\" href=\"reactive_graph_net_http_model/component/url/enum.UrlProperties.html\" title=\"enum reactive_graph_net_http_model::component::url::UrlProperties\">UrlProperties</a>"]]]]);
+    if (window.register_implementors) {
+        window.register_implementors(implementors);
+    } else {
+        window.pending_implementors = implementors;
+    }
+})()
+//{"start":57,"fragment_lengths":[582,1003]}

@@ -1,0 +1,9 @@
+(function() {
+    var implementors = Object.fromEntries([["reactive_graph_net_git",[["impl BehaviourShutdown&lt;<a class=\"struct\" href=\"https://docs.rs/uuid/1.16.0/uuid/struct.Uuid.html\" title=\"struct uuid::Uuid\">Uuid</a>, ReactiveEntity&gt; for <a class=\"struct\" href=\"reactive_graph_net_git/behaviour/component/repository/struct.RepositoryBehaviourTransitions.html\" title=\"struct reactive_graph_net_git::behaviour::component::repository::RepositoryBehaviourTransitions\">RepositoryBehaviourTransitions</a>"]]],["reactive_graph_net_http",[["impl BehaviourShutdown&lt;<a class=\"struct\" href=\"https://docs.rs/uuid/1.16.0/uuid/struct.Uuid.html\" title=\"struct uuid::Uuid\">Uuid</a>, ReactiveEntity&gt; for <a class=\"struct\" href=\"reactive_graph_net_http/behaviour/component/http/struct.HttpBehaviourTransitions.html\" title=\"struct reactive_graph_net_http::behaviour::component::http::HttpBehaviourTransitions\">HttpBehaviourTransitions</a>"],["impl BehaviourShutdown&lt;<a class=\"struct\" href=\"https://docs.rs/uuid/1.16.0/uuid/struct.Uuid.html\" title=\"struct uuid::Uuid\">Uuid</a>, ReactiveEntity&gt; for <a class=\"struct\" href=\"reactive_graph_net_http/behaviour/component/json_rpc/struct.JsonRpcBehaviourTransitions.html\" title=\"struct reactive_graph_net_http::behaviour::component::json_rpc::JsonRpcBehaviourTransitions\">JsonRpcBehaviourTransitions</a>"]]]]);
+    if (window.register_implementors) {
+        window.register_implementors(implementors);
+    } else {
+        window.pending_implementors = implementors;
+    }
+})()
+//{"start":57,"fragment_lengths":[465,865]}
