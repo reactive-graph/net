@@ -1,6 +1,6 @@
+use reactive_graph_plugin_api::EntityComponentBehaviourRegistry;
 use reactive_graph_plugin_api::prelude::plugin::*;
 use reactive_graph_plugin_api::prelude::providers::*;
-use reactive_graph_plugin_api::EntityComponentBehaviourRegistry;
 
 use crate::behaviour::component::repository::RepositoryFactory;
 use reactive_graph_net_git_model::BEHAVIOUR_REPOSITORY;

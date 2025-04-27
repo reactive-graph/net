@@ -8,15 +8,14 @@ use uuid::Uuid;
 
 use reactive_graph_net_git_model::RepositoryProperties::FAST_FORWARD;
 
-use reactive_graph_sys_file_model::FileProperties::FILENAME;
 use reactive_graph_net_git_model::GitRepository;
 use reactive_graph_net_git_model::RepositoryProperties::BRANCH;
 use reactive_graph_net_git_model::RepositoryProperties::FETCH;
-// use reactive_graph_net_git_model::RepositoryProperties::PUSH;
 use reactive_graph_net_git_model::RepositoryProperties::REMOTE_BRANCH;
 use reactive_graph_net_git_model::RepositoryProperties::REMOTE_NAME;
 use reactive_graph_net_http_model::UrlProperties::URL;
 use reactive_graph_runtime_model::ActionProperties::TRIGGER;
+use reactive_graph_sys_file_model::FileProperties::FILENAME;
 
 entity_behaviour!(Repository, RepositoryFactory, RepositoryFsm, RepositoryBehaviourTransitions, RepositoryValidator);
 

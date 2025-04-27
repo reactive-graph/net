@@ -1,16 +1,16 @@
 use crate::ComponentRepository;
 use crate::GitRepository;
-use crate::TransferProgress;
 use crate::NAMESPACE_GIT;
+use crate::TransferProgress;
 use reactive_graph_graph::entity_ty;
-use reactive_graph_sys_file_model::File;
-use reactive_graph_sys_file_model::FilePath;
 use reactive_graph_net_http_model::ParsedUrl;
 use reactive_graph_net_http_model::Url;
 use reactive_graph_reactive_model_api::entity_model;
 use reactive_graph_runtime_model::Action;
 use reactive_graph_std_base_model::Describable;
 use reactive_graph_std_base_model::Named;
+use reactive_graph_sys_file_model::File;
+use reactive_graph_sys_file_model::FilePath;
 
 // All properties are defined in the component(s)
 
