@@ -44,6 +44,9 @@ reactive-graph-net-http-model = { version = "0.10.0", path = "../../../http/crat
 [dev-dependencies]
 reactive-graph-graph = { workspace = true, features = ["test"] }
 
+[target.'cfg(target = "x86_64-unknown-linux-musl")'.dependencies]
+openssl = { version = "0.10", features = ["vendored"] }
+
 [target.'cfg(target = "armv7-unknown-linux-gnueabihf")'.dependencies]
 openssl = { version = "0.10", features = ["vendored"] }
 
