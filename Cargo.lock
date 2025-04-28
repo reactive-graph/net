@@ -1495,7 +1495,7 @@ dependencies = [
  "reactive-graph-runtime-model",
  "serde",
  "serde_json",
- "strum_macros 0.27.1",
+ "strum_macros",
  "typed-builder",
  "uuid",
 ]
@@ -1580,7 +1580,7 @@ dependencies = [
  "reactive-graph-std-base-model",
  "reactive-graph-sys-file-model",
  "serde_json",
- "strum_macros 0.26.4",
+ "strum_macros",
 ]
 
 [[package]]
@@ -1620,7 +1620,7 @@ dependencies = [
  "reactive-graph-runtime-model",
  "reactive-graph-std-result-model",
  "serde_json",
- "strum_macros 0.26.4",
+ "strum_macros",
  "url",
 ]
 
@@ -1733,7 +1733,7 @@ dependencies = [
  "reactive-graph-graph",
  "serde",
  "serde_json",
- "strum_macros 0.27.1",
+ "strum_macros",
 ]
 
 [[package]]
@@ -1758,7 +1758,7 @@ dependencies = [
  "semver",
  "serde",
  "serde_json",
- "strum_macros 0.27.1",
+ "strum_macros",
 ]
 
 [[package]]
@@ -1769,7 +1769,7 @@ dependencies = [
  "reactive-graph-graph",
  "serde",
  "serde_json",
- "strum_macros 0.27.1",
+ "strum_macros",
 ]
 
 [[package]]
@@ -1785,7 +1785,7 @@ dependencies = [
  "reactive-graph-reactive-model-impl",
  "reactive-graph-runtime-model",
  "serde_json",
- "strum_macros 0.27.1",
+ "strum_macros",
 ]
 
 [[package]]
@@ -2178,20 +2178,7 @@ version = "0.27.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f64def088c51c9510a8579e3c5d67c65349dcf755e5479ad3d010aa6454e2c32"
 dependencies = [
- "strum_macros 0.27.1",
-]
-
-[[package]]
-name = "strum_macros"
-version = "0.26.4"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "4c6bee85a5a24955dc440386795aa378cd9cf82acd5f764469152d2270e581be"
-dependencies = [
- "heck",
- "proc-macro2",
- "quote",
- "rustversion",
- "syn 2.0.101",
+ "strum_macros",
 ]
 
 [[package]]
