@@ -16,6 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Moved plugins http and git from `reactive-graph/std` -> `reactive-graph/net`
 - Prefix plugins with `net` (e.g. `libreactive_graph_net_http`)
 - Refactored usages of `net` to its new namespace
+- Configure lints on workspace level
 
 ### Fixed
 
