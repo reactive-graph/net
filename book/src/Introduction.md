@@ -1,5 +1,1 @@
-# Introduction
-
-STD
-
-...
+{{#include ../../README.md}}
