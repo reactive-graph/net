@@ -3,8 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Reactive Graph - Network Library</title>
-        <meta name="robots" content="noindex">
+        <title>License - Reactive Graph - Network Library</title>
 
 
         <!-- Custom HTML head -->
@@ -136,6 +135,9 @@
                         <a href="https://github.com/reactive-graph/net" title="Git repository" aria-label="Git repository">
                             <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
+                        <a href="https://github.com/reactive-graph/net/edit/main/src/License.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
 
                     </div>
                 </div>
@@ -162,104 +164,7 @@
 
                 <div id="content" class="content">
                     <main>
-                        <div align="center">
-  <a href="https://www,reactive-graph.io/"><img src="https://raw.githubusercontent.com/reactive-graph/design/main/public/logo/rendered/malachite/reactive-graph-400x400.png" alt="Reactive Graph"></a>
-</div>
-<h2 align="center">
-    <a href="https://net.reactive-graph.io/">net.reactive-graph.io</a>
-</h2>
-<p align="center">
-This repository contains plugins for the <a href="https://github.com/reactive-graph/reactive-graph">Reactive Graph</a> that allows to interoperate with other systems.
-</p>
-<p align="center">
-  <a href="https://github.com/reactive-graph/reactive-graph">Reactive Graph</a> is a <b>reactive runtime</b> based on a <b>graph database</b>, empowering everyone to build reliable and efficient software.
-</p>
-<hr>
-<div align="center" style="text-align: center">
-<p><a href="https://net.reactive-graph.io/book/"><img src="https://img.shields.io/badge/book-master-yellow"></a>
-<a href="https://net.reactive-graph.io/docs/"><img src="https://img.shields.io/badge/api-master-yellow"></a></p>
-<p><a href="https://www.rust-lang.org/"><img src="https://img.shields.io/badge/Language-Rust-brightgreen"></a>
-<a href=""><img src="https://img.shields.io/badge/Platforms-Linux%20%26%20Windows-brightgreen"></a>
-<a href="https://github.com/reactive-graph/net/blob/main/LICENSE"><img src="https://img.shields.io/github/license/reactive-graph/net"></a></p>
-<p><a href="https://github.com/reactive-graph/net/actions/workflows/rust.yml"><img src="https://github.com/reactive-graph/net/actions/workflows/rust.yml/badge.svg" alt="Build" /></a>
-<a href="https://discord.com/invite/acUW8k7"><img src="https://img.shields.io/discord/698219248954376256?logo=discord"></a></p>
-</div>
-<hr>
-<h2 align="center" style="text-align: center;">List of Plugins</h2>
-<div class="table-wrapper"><table><thead><tr><th>Protocol</th><th>Description</th><th>Technology</th></tr></thead><tbody>
-<tr><td>HTTP + JSON-RPC</td><td>Send HTTP requests and get HTTP responses</td><td>https://github.com/reactive-graph/plugins-core/tree/main/plugins/http</td></tr>
-<tr><td>Git</td><td>Clone and modify git repositories</td><td>https://github.com/reactive-graph/plugins-core/tree/main/plugins/git</td></tr>
-</tbody></table>
-</div><h2 align="center" style="text-align: center;">Planned Plugins</h2>
-<div class="table-wrapper"><table><thead><tr><th>Protocol</th><th>Description</th><th>Status</th><th>Technology</th></tr></thead><tbody>
-<tr><td>GraphQL</td><td>Reactive Graph acts as client (send queries, send mutations, subscribe subscriptions)</td><td>Not implemented</td><td>https://docs.rs/gql_client/latest/gql_client/</td></tr>
-<tr><td>MQTT</td><td>Reactive Graph acts as client (subscribing queues, send messages)</td><td>Not implemented</td><td>https://github.com/bytebeamio/rumqtt</td></tr>
-<tr><td>AMQP</td><td>Reactive Graph acts as client (subscribing queues, send messages)</td><td>Not implemented</td><td>https://github.com/amqp-rs/lapin</td></tr>
-<tr><td>Telegraf</td><td>Reactive Graph produces metrics</td><td>Not implemented</td><td>https://github.com/maxmindlin/telegraf-rust</td></tr>
-</tbody></table>
-</div><div style="break-before: page; page-break-before: always;"></div><h1 id="plugin-http"><a class="header" href="#plugin-http">Plugin HTTP</a></h1>
-<p>This plugin provides a reactive http client integration. Using entities of type <code>http</code> requests via HTTP can be made.</p>
-<p>With this plugin it's possible to integrate external services into your home automation.</p>
-<h2 id="type-system"><a class="header" href="#type-system">Type System</a></h2>
-<img src="https://raw.githubusercontent.com/reactive-graph/net/main/docs/images/type_system.png">
-<h2 id="entity-types"><a class="header" href="#entity-types">Entity Types</a></h2>
-<div class="table-wrapper"><table><thead><tr><th>Name</th><th>Property</th><th>Data Type</th><th>Socket Type</th></tr></thead><tbody>
-<tr><td>Http</td><td>url</td><td>string</td><td>input</td></tr>
-<tr><td></td><td>method</td><td>string</td><td>input</td></tr>
-<tr><td></td><td>request_headers</td><td>object</td><td>input</td></tr>
-<tr><td></td><td>payload</td><td>object</td><td>input</td></tr>
-<tr><td></td><td>response_headers</td><td>object</td><td>output</td></tr>
-<tr><td></td><td>result</td><td>object</td><td>output</td></tr>
-<tr><td></td><td>status</td><td>number</td><td>output</td></tr>
-<tr><td>JsonRpc</td><td>url</td><td>string</td><td>input</td></tr>
-<tr><td></td><td>json_rpc_version</td><td>string</td><td>input</td></tr>
-<tr><td></td><td>method</td><td>string</td><td>none</td></tr>
-<tr><td></td><td>params</td><td>object</td><td>input</td></tr>
-<tr><td></td><td>result</td><td>object</td><td>output</td></tr>
-<tr><td></td><td>error</td><td>object</td><td>output</td></tr>
-</tbody></table>
-</div>
-<h2 id="entity-behaviours"><a class="header" href="#entity-behaviours">Entity Behaviours</a></h2>
-<div class="table-wrapper"><table><thead><tr><th>Name</th><th>Description</th></tr></thead><tbody>
-<tr><td>Http</td><td>Sends a HTTP request with the given HTTP method to the given URL entity using the given headers and payload.<br/>The trigger is the property <code>payload</code> even if there is no payload.</td></tr>
-</tbody></table>
-</div>
-<h2 id="platform-compatibility"><a class="header" href="#platform-compatibility">Platform Compatibility</a></h2>
-<div class="table-wrapper"><table><thead><tr><th>Platform</th><th>Compatibility</th></tr></thead><tbody>
-<tr><td>Linux</td><td>✓</td></tr>
-<tr><td>MacOS</td><td>✓</td></tr>
-<tr><td>Windows</td><td>✓</td></tr>
-</tbody></table>
-</div><div style="break-before: page; page-break-before: always;"></div><h1 id="plugin-git"><a class="header" href="#plugin-git">Plugin Git</a></h1>
-<p>This plugin provides git functionality. You can clone a repository, fetch, pull and fast-forward.</p>
-<h2 id="component"><a class="header" href="#component">Component</a></h2>
-<div class="table-wrapper"><table><thead><tr><th>Property</th><th>Component</th><th>DataType</th><th>SocketType</th><th>Description</th></tr></thead><tbody>
-<tr><td><code>name</code></td><td><code>base__named</code></td><td><code>String</code></td><td><code>none</code></td><td>The name.</td></tr>
-<tr><td><code>description</code></td><td><code>base__describable</code></td><td><code>String</code></td><td><code>none</code></td><td>The description.</td></tr>
-<tr><td><code>url</code></td><td><code>http__url</code></td><td><code>String</code></td><td><code>input</code></td><td>The remote url.</td></tr>
-<tr><td><code>file</code></td><td><code>file_file</code></td><td><code>String</code></td><td><code>input</code></td><td>The local path.</td></tr>
-<tr><td><code>branch</code></td><td><code>git__git</code></td><td><code>String</code></td><td><code>input</code></td><td>The git branch name. Executes a <code>git checkout</code> on change.</td></tr>
-<tr><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td><code>remote_name</code></td><td><code>git__git</code></td><td><code>String</code></td><td><code>input</code></td><td>The name of the remote (default: <code>origin</code>).</td></tr>
-<tr><td><code>remote_branch</code></td><td><code>git__git</code></td><td><code>String</code></td><td><code>input</code></td><td>The name of the remote branch</td></tr>
-<tr><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td><code>trigger</code></td><td><code>git__git</code></td><td><code>Bool</code></td><td><code>input</code></td><td>Clone or pull</td></tr>
-<tr><td><code>fetch</code></td><td><code>git__git</code></td><td><code>Bool</code></td><td><code>input</code></td><td>Fetch</td></tr>
-<tr><td><code>fast_forward</code></td><td><code>git__git</code></td><td><code>Bool</code></td><td><code>input</code></td><td>Fast-forward</td></tr>
-<tr><td><code>push</code></td><td><code>git__git</code></td><td><code>Bool</code></td><td><code>input</code></td><td>Pushes to the given remote (by default origin)</td></tr>
-<tr><td><code>merge_from</code></td><td><code>git__git</code></td><td><code>String</code></td><td><code>input</code></td><td>Merges the given branch into the current branch</td></tr>
-</tbody></table>
-</div>
-<h2 id="platform-compatibility-1"><a class="header" href="#platform-compatibility-1">Platform Compatibility</a></h2>
-<div class="table-wrapper"><table><thead><tr><th>Platform</th><th>Compatibility</th></tr></thead><tbody>
-<tr><td>Linux</td><td>✓</td></tr>
-<tr><td>MacOS</td><td>✓</td></tr>
-<tr><td>Windows</td><td>✓</td></tr>
-</tbody></table>
-</div>
-<h2 id="credits"><a class="header" href="#credits">Credits</a></h2>
-<p>This plugin integrates with https://crates.io/crates/git2</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="mit-license"><a class="header" href="#mit-license">MIT License</a></h1>
+                        <h1 id="mit-license"><a class="header" href="#mit-license">MIT License</a></h1>
 <p>Copyright (c) 2011-2024 Andreas Schaeffer, the Reactive Graph Contributors and the Inexor Collective.</p>
 <p>Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -281,6 +186,9 @@ SOFTWARE.</p>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="git.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
 
 
                         <div style="clear: both"></div>
@@ -289,6 +197,9 @@ SOFTWARE.</p>
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="git.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
 
             </nav>
 
@@ -316,11 +227,6 @@ SOFTWARE.</p>
         <script src="graphql-playground-react-middleware.js"></script>
         <script src="graphql-playground.js"></script>
 
-        <script>
-        window.addEventListener('load', function() {
-            window.setTimeout(window.print, 100);
-        });
-        </script>
 
     </div>
     </body>
