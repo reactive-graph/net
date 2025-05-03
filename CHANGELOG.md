@@ -17,6 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Prefix plugins with `net` (e.g. `libreactive_graph_net_http`)
 - Refactored usages of `net` to its new namespace
 - Configure lints on workspace level
+- Replaced lazy_static with LazyLock
 
 ### Fixed
 

@@ -1567,7 +1567,6 @@ name = "reactive-graph-net-git-model"
 version = "0.10.0"
 dependencies = [
  "git2",
- "lazy_static",
  "log",
  "paste",
  "reactive-graph-behaviour-model-api",
@@ -1610,7 +1609,6 @@ dependencies = [
 name = "reactive-graph-net-http-model"
 version = "0.10.0"
 dependencies = [
- "lazy_static",
  "paste",
  "reactive-graph-behaviour-model-api",
  "reactive-graph-graph",
