@@ -28,7 +28,7 @@ json5 = "0.4"
 log = { version = "0.4", features = ["std", "serde"] }
 log4rs = { version = "1.2", features = ["console_appender", "file_appender", "toml_format"] }
 paste = "1.0"
-rust-embed = { version = "8.0", features = ["debug-embed", "compression"] }
+rust-embed = { version = "8.7", features = ["debug-embed", "compression"] }
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
 springtime = "1.0"
