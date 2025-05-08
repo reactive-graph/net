@@ -273,7 +273,7 @@ version = "3.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "fde0e0ec90c9dfb3b4b1a0891a7dcd0e2bffde2f7efed5fe7c9bb00e5bfb915e"
 dependencies = [
- "windows-sys 0.52.0",
+ "windows-sys 0.59.0",
 ]
 
 [[package]]
@@ -1772,7 +1772,7 @@ dependencies = [
 [[package]]
 name = "reactive-graph-sys-file-model"
 version = "0.10.0"
-source = "git+https://github.com/reactive-graph/sys.git#4a91a1578faa40225d2bd30e0e489ccb679e8e63"
+source = "git+https://github.com/reactive-graph/sys.git#3f5489dfc76f2779d952f87d766aafdf3fd1cfb0"
 dependencies = [
  "paste",
  "reactive-graph-behaviour-model-api",
@@ -2646,7 +2646,7 @@ version = "0.1.9"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "cf221c93e13a30d793f7645a0e7762c55d169dbb0a49671918a2319d289b10bb"
 dependencies = [
- "windows-sys 0.52.0",
+ "windows-sys 0.59.0",
 ]
 
 [[package]]
