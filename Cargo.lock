@@ -1772,7 +1772,7 @@ dependencies = [
 [[package]]
 name = "reactive-graph-sys-file-model"
 version = "0.10.0"
-source = "git+https://github.com/reactive-graph/sys.git#514672d3f1251db46d90a0bb1e2f48ac96ee2624"
+source = "git+https://github.com/reactive-graph/sys.git#9ce38b1316736110aec8c79c8b03a7fef70779d1"
 dependencies = [
  "paste",
  "reactive-graph-behaviour-model-api",
