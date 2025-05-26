@@ -273,7 +273,7 @@ version = "3.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "fde0e0ec90c9dfb3b4b1a0891a7dcd0e2bffde2f7efed5fe7c9bb00e5bfb915e"
 dependencies = [
- "windows-sys 0.59.0",
+ "windows-sys 0.52.0",
 ]
 
 [[package]]
@@ -1512,7 +1512,7 @@ dependencies = [
 [[package]]
 name = "reactive-graph-graph"
 version = "0.10.0"
-source = "git+https://github.com/reactive-graph/reactive-graph.git#455efb982bff13db331ad8639f14ad9cbae0dcff"
+source = "git+https://github.com/reactive-graph/reactive-graph.git#80ac160fc367eda1cb69f9a0fdd9373477e32920"
 dependencies = [
  "dashmap",
  "default-test",
@@ -1747,7 +1747,7 @@ dependencies = [
 [[package]]
 name = "reactive-graph-std-base-model"
 version = "0.10.0"
-source = "git+https://github.com/reactive-graph/std.git#c5f9ab9b9a0eb81f1b308ab98a37c649ccf77cf6"
+source = "git+https://github.com/reactive-graph/std.git#98536564b4432d5c8026a82dd5cbdc87437c64de"
 dependencies = [
  "license",
  "paste",
@@ -1761,7 +1761,7 @@ dependencies = [
 [[package]]
 name = "reactive-graph-std-result-model"
 version = "0.10.0"
-source = "git+https://github.com/reactive-graph/std.git#c5f9ab9b9a0eb81f1b308ab98a37c649ccf77cf6"
+source = "git+https://github.com/reactive-graph/std.git#98536564b4432d5c8026a82dd5cbdc87437c64de"
 dependencies = [
  "reactive-graph-graph",
  "serde",
@@ -1818,7 +1818,7 @@ dependencies = [
 [[package]]
 name = "reactive-graph-utils-test"
 version = "0.10.0"
-source = "git+https://github.com/reactive-graph/reactive-graph.git#455efb982bff13db331ad8639f14ad9cbae0dcff"
+source = "git+https://github.com/reactive-graph/reactive-graph.git#80ac160fc367eda1cb69f9a0fdd9373477e32920"
 dependencies = [
  "colored",
  "log",
@@ -1990,8 +1990,8 @@ dependencies = [
 
 [[package]]
 name = "schemars"
-version = "1.0.0-alpha.17"
-source = "git+https://github.com/GREsau/schemars.git#605ca1b06c63ce954bf622734fd62643b163d9d0"
+version = "1.0.0-alpha.18"
+source = "git+https://github.com/GREsau/schemars.git#f9bcfd8b3f0bbe5debfd9e21304e48c14ccbf2ca"
 dependencies = [
  "dyn-clone",
  "ref-cast",
@@ -2003,8 +2003,8 @@ dependencies = [
 
 [[package]]
 name = "schemars_derive"
-version = "1.0.0-alpha.17"
-source = "git+https://github.com/GREsau/schemars.git#605ca1b06c63ce954bf622734fd62643b163d9d0"
+version = "1.0.0-alpha.18"
+source = "git+https://github.com/GREsau/schemars.git#f9bcfd8b3f0bbe5debfd9e21304e48c14ccbf2ca"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -2648,7 +2648,7 @@ version = "0.1.9"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "cf221c93e13a30d793f7645a0e7762c55d169dbb0a49671918a2319d289b10bb"
 dependencies = [
- "windows-sys 0.59.0",
+ "windows-sys 0.52.0",
 ]
 
 [[package]]
