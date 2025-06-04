@@ -1,4 +1,5 @@
 {
+  "$id": "https://schema.reactive-graph.io/schema/json/component.schema.json",
   "namespace": "http",
   "type_name": "json_rpc",
   "description": "Sends JSON-RPC request to a given URL",
@@ -18,7 +19,7 @@
       "name": "params",
       "data_type": "object",
       "socket_type": "input",
-      "extensions":[
+      "extensions": [
         {
           "namespace": "core",
           "type_name": "auto_trigger",
@@ -43,7 +44,7 @@
     {
       "namespace": "metadata",
       "type_name": "dublin-core",
-      "extension":{
+      "extension": {
         "title": "JSON-RPC",
         "subject": "JSON Remote Procedure Call",
         "creator": "Hanack"

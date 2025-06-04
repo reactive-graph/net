@@ -1,4 +1,5 @@
 {
+  "$id": "https://schema.reactive-graph.io/schema/json/entity-tyoe.schema.json",
   "namespace": "git",
   "type_name": "repository",
   "description": "Git repository",
@@ -34,7 +35,7 @@
     {
       "namespace": "metadata",
       "type_name": "dublin-core",
-      "extension":{
+      "extension": {
         "title": "Git Repository",
         "subject": "Git is a distributed version control system: tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code during software development.",
         "creator": "Hanack"
