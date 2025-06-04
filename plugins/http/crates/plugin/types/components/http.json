@@ -1,4 +1,5 @@
 {
+  "$id": "https://schema.reactive-graph.io/schema/json/component.schema.json",
   "namespace": "http",
   "type_name": "http",
   "description": "Sends HTTP request to a given URL",
@@ -8,7 +9,7 @@
     {
       "namespace": "metadata",
       "type_name": "dublin-core",
-      "extension":{
+      "extension": {
         "title": "HTTP",
         "subject": "Sends HTTP request to a given URL",
         "creator": "Hanack"
