@@ -170,7 +170,7 @@ jobs:
       - name: Install Compiler Tools for Target i686-unknown-linux-gnu
         uses: awalsh128/cache-apt-pkgs-action@latest
         with:
-          packages: binutils-i686-linux-gnu gcc-i686-linux-gnu
+          packages: binutils-i686-linux-gnu gcc-i686-linux-gnu pkg-config libssl-dev
           version: 1.0
         if: matrix.target == 'i686-unknown-linux-gnu'
       - name: Install Compiler Tools for Target x86_64-pc-windows-gnu
@@ -182,32 +182,32 @@ jobs:
       - name: Install Compiler Tools for Target armv7-unknown-linux-gnueabihf
         uses: awalsh128/cache-apt-pkgs-action@latest
         with:
-          packages: binutils-arm-linux-gnueabihf gcc-arm-linux-gnueabihf
+          packages: binutils-arm-linux-gnueabihf gcc-arm-linux-gnueabihf pkg-config libssl-dev
           version: 1.0
         if: |
           matrix.target == 'armv7-unknown-linux-gnueabihf'
       - name: Install Compiler Tools for Target powerpc-unknown-linux-gnu
         uses: awalsh128/cache-apt-pkgs-action@latest
         with:
-          packages: binutils-powerpc-linux-gnu gcc-powerpc-linux-gnu
+          packages: binutils-powerpc-linux-gnu gcc-powerpc-linux-gnu pkg-config libssl-dev
           version: 1.0
         if: matrix.target == 'powerpc-unknown-linux-gnu'
       - name: Install Compiler Tools for Target powerpc64-unknown-linux-gnu
         uses: awalsh128/cache-apt-pkgs-action@latest
         with:
-          packages: binutils-powerpc64-linux-gnu gcc-powerpc64-linux-gnu
+          packages: binutils-powerpc64-linux-gnu gcc-powerpc64-linux-gnu pkg-config libssl-dev
           version: 1.0
         if: matrix.target == 'powerpc64-unknown-linux-gnu'
       - name: Install Compiler Tools for Target powerpc64le-unknown-linux-gnu
         uses: awalsh128/cache-apt-pkgs-action@latest
         with:
-          packages: binutils-powerpc64le-linux-gnu gcc-powerpc64le-linux-gnu
+          packages: binutils-powerpc64le-linux-gnu gcc-powerpc64le-linux-gnu pkg-config libssl-dev
           version: 1.0
         if: matrix.target == 'powerpc64le-unknown-linux-gnu'
       - name: Install Compiler Tools for Target riscv64gc-unknown-linux-gnu
         uses: awalsh128/cache-apt-pkgs-action@latest
         with:
-          packages: binutils-riscv64-linux-gnu gcc-riscv64-linux-gnu
+          packages: binutils-riscv64-linux-gnu gcc-riscv64-linux-gnu pkg-config libssl-dev
           version: 1.0
         if: matrix.target == 'riscv64gc-unknown-linux-gnu'
       - name: Set AWS_LC_SYS_CFLAGS on powerpc-unknown-linux-gnu
@@ -328,37 +328,37 @@ jobs:
       - name: Install Compiler Tools for Target i686-unknown-linux-gnu
         uses: awalsh128/cache-apt-pkgs-action@latest
         with:
-          packages: binutils-i686-linux-gnu gcc-i686-linux-gnu
+          packages: binutils-i686-linux-gnu gcc-i686-linux-gnu pkg-config libssl-dev
           version: 1.0
         if: matrix.target == 'i686-unknown-linux-gnu'
       - name: Install Compiler Tools for Target armv7-unknown-linux-gnueabihf
         uses: awalsh128/cache-apt-pkgs-action@latest
         with:
-          packages: binutils-arm-linux-gnueabihf gcc-arm-linux-gnueabihf
+          packages: binutils-arm-linux-gnueabihf gcc-arm-linux-gnueabihf pkg-config libssl-dev
           version: 1.0
         if: matrix.target == 'armv7-unknown-linux-gnueabihf'
       - name: Install Compiler Tools for Target powerpc-unknown-linux-gnu
         uses: awalsh128/cache-apt-pkgs-action@latest
         with:
-          packages: binutils-powerpc-linux-gnu gcc-powerpc-linux-gnu g++-powerpc-linux-gnu
+          packages: binutils-powerpc-linux-gnu gcc-powerpc-linux-gnu g++-powerpc-linux-gnu pkg-config libssl-dev
           version: 1.0
         if: matrix.target == 'powerpc-unknown-linux-gnu'
       - name: Install Compiler Tools for Target powerpc64-unknown-linux-gnu
         uses: awalsh128/cache-apt-pkgs-action@latest
         with:
-          packages: binutils-powerpc64-linux-gnu gcc-powerpc64-linux-gnu g++-powerpc64-linux-gnu
+          packages: binutils-powerpc64-linux-gnu gcc-powerpc64-linux-gnu g++-powerpc64-linux-gnu pkg-config libssl-dev
           version: 1.0
         if: matrix.target == 'powerpc64-unknown-linux-gnu'
       - name: Install Compiler Tools for Target powerpc64le-unknown-linux-gnu
         uses: awalsh128/cache-apt-pkgs-action@latest
         with:
-          packages: binutils-powerpc64le-linux-gnu gcc-powerpc64le-linux-gnu g++-powerpc64le-linux-gnu
+          packages: binutils-powerpc64le-linux-gnu gcc-powerpc64le-linux-gnu g++-powerpc64le-linux-gnu pkg-config libssl-dev
           version: 1.0
         if: matrix.target == 'powerpc64le-unknown-linux-gnu'
       - name: Install Compiler Tools for Target riscv64gc-unknown-linux-gnu
         uses: awalsh128/cache-apt-pkgs-action@latest
         with:
-          packages: binutils-riscv64-linux-gnu gcc-riscv64-linux-gnu
+          packages: binutils-riscv64-linux-gnu gcc-riscv64-linux-gnu pkg-config libssl-dev
           version: 1.0
         if: matrix.target == 'riscv64gc-unknown-linux-gnu'
       - name: Set AWS_LC_SYS_CFLAGS on powerpc-unknown-linux-gnu
