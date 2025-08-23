@@ -40,8 +40,8 @@ thiserror = "2.0"
 tokio = { version = "1", features = ["macros", "time", "rt", "rt-multi-thread"] }
 toml = "0.9"
 ureq = { version = "2.4", features = ["json"] }
-url = "2.3"
-uuid = { version = "1.17", features = ["serde", "v4", "v5"] }
+url = "2.5"
+uuid = { version = "1.18", features = ["serde", "v4", "v5"] }
 
 ### Prefer git to crates.io for development
 
